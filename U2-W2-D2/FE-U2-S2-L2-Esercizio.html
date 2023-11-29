@@ -111,7 +111,14 @@ EXTRAS
     <div class="container-fluid bg-body-tertiary">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="img/download.png" alt="logo" width="90" height="50" /></a>
+          <a class="navbar-brand" href="#"
+            ><<img
+              height="40"
+              src="https://seeklogo.com/images/E/Evelin_R_travel_agency-logo-F9A7A2958C-seeklogo.com.png"
+              alt="logo"
+              width="90"
+              height="50"
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -124,7 +131,7 @@ EXTRAS
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav align-items-center">
+            <ul class="navbar-nav me-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
               </li>
@@ -140,22 +147,11 @@ EXTRAS
               <li class="nav-item">
                 <a class="nav-link" href="#">Recensioni</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <div class="container-fluid">
-                    <form class="d-flex" role="search">
-                      <input
-                        class="form-control me-2"
-                        type="search"
-                        placeholder="Cerca posti da sogno"
-                        aria-label="Search"
-                      />
-                      <button class="btn btn-outline-danger" type="submit">Cerca</button>
-                    </form>
-                  </div>
-                </a>
-              </li>
             </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cerca posti da sogno" aria-label="Search" />
+              <button class="btn btn-outline-danger" type="submit">Cerca</button>
+            </form>
           </div>
         </div>
       </nav>
@@ -172,82 +168,30 @@ EXTRAS
         </div>
         <hr />
         <div>
-          <h3 class="display-7 text-secondary my-2">Scopri le destinazioni più calde del momento!</h3>
+          <h3 class="display-7 text-secondary mb-5">Scopri le destinazioni più calde del momento!</h3>
         </div>
         <div>
-          <button class="border-0 bg-info text-white rounded-3 my-4 p-3">Prenota ora</button>
+          <button class="btn btn-info btn-lg px-5 fw-bold text-white rounded-3">Prenota ora</button>
         </div>
       </div>
-      <div class="container my-3">
-        <h3 class="display-7 my-2">Saldi</h3>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-3">
-          <div class="col">
-            <div class="card border-2 border-info" style="width: 18rem">
-              <img src="img/vacanza-mare.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Titolo</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, tempore. Sunt numquam vero consectetur
-                  fugit, dolor nisi a sapiente similique cum molestias possimus quam tenetur at perferendis beatae
-                  veritatis repellendus?
-                </p>
-                <a href="#" class="btn btn-info">Prenota!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card border-2 border-info" style="width: 18rem">
-              <img src="img/vacanza-mare.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Titolo</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, tempore. Sunt numquam vero consectetur
-                  fugit, dolor nisi a sapiente similique cum molestias possimus quam tenetur at perferendis beatae
-                  veritatis repellendus?
-                </p>
-                <a href="#" class="btn btn-info">Prenota!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card border-2 border-info" style="width: 18rem">
-              <img src="img/vacanza-mare.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Titolo</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, tempore. Sunt numquam vero consectetur
-                  fugit, dolor nisi a sapiente similique cum molestias possimus quam tenetur at perferendis beatae
-                  veritatis repellendus?
-                </p>
-                <a href="#" class="btn btn-info">Prenota!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card border-2 border-info" style="width: 18rem">
-              <img src="img/vacanza-mare.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Titolo</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, tempore. Sunt numquam vero consectetur
-                  fugit, dolor nisi a sapiente similique cum molestias possimus quam tenetur at perferendis beatae
-                  veritatis repellendus?
-                </p>
-                <a href="#" class="btn btn-info">Prenota!</a>
-              </div>
-            </div>
-          </div>
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h3 class="display-7">Saldi</h3>
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-info border-0 align-self-center mb-4"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseWeekDeal"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Nascondi sezione
+          </button>
         </div>
-      </div>
-      <div class="container my-5">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 gy-3">
-          <div class="col">
-            <div class="card shadow-lg">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+          <div class="col px-4">
+            <div class="card border-2 border-info">
               <img src="img/vacanza-mare.jpg" class="card-img-top" alt="..." />
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                HOT
-                <span class="visually-hidden">unread messages</span>
-              </span>
               <div class="card-body">
                 <h5 class="card-title">Titolo</h5>
                 <p class="card-text">
@@ -259,13 +203,9 @@ EXTRAS
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card shadow-lg">
+          <div class="col px-4">
+            <div class="card border-2 border-info">
               <img src="img/vacanza-mare.jpg" class="card-img-top" alt="..." />
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                HOT
-                <span class="visually-hidden">unread messages</span>
-              </span>
               <div class="card-body">
                 <h5 class="card-title">Titolo</h5>
                 <p class="card-text">
@@ -277,13 +217,9 @@ EXTRAS
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card shadow-lg">
+          <div class="col px-4">
+            <div class="card border-2 border-info">
               <img src="img/vacanza-mare.jpg" class="card-img-top" alt="..." />
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                HOT
-                <span class="visually-hidden">unread messages</span>
-              </span>
               <div class="card-body">
                 <h5 class="card-title">Titolo</h5>
                 <p class="card-text">
@@ -295,49 +231,9 @@ EXTRAS
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card shadow-lg">
+          <div class="col d-md-none d-lg-inline-block px-4">
+            <div class="card border-2 border-info">
               <img src="img/vacanza-mare.jpg" class="card-img-top" alt="..." />
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                HOT
-                <span class="visually-hidden">unread messages</span>
-              </span>
-              <div class="card-body">
-                <h5 class="card-title">Titolo</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, tempore. Sunt numquam vero consectetur
-                  fugit, dolor nisi a sapiente similique cum molestias possimus quam tenetur at perferendis beatae
-                  veritatis repellendus?
-                </p>
-                <a href="#" class="btn btn-info">Prenota!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-lg">
-              <img src="img/vacanza-mare.jpg" class="card-img-top" alt="..." />
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                HOT
-                <span class="visually-hidden">unread messages</span>
-              </span>
-              <div class="card-body">
-                <h5 class="card-title">Titolo</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, tempore. Sunt numquam vero consectetur
-                  fugit, dolor nisi a sapiente similique cum molestias possimus quam tenetur at perferendis beatae
-                  veritatis repellendus?
-                </p>
-                <a href="#" class="btn btn-info">Prenota!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-lg">
-              <img src="img/vacanza-mare.jpg" class="card-img-top" alt="..." />
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                HOT
-                <span class="visually-hidden">unread messages</span>
-              </span>
               <div class="card-body">
                 <h5 class="card-title">Titolo</h5>
                 <p class="card-text">
@@ -351,13 +247,134 @@ EXTRAS
           </div>
         </div>
       </div>
+      <div class="container mt-5">
+        <h3 class="display-7">Welcome Summer</h3>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-6 gy-3">
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="img/vacanza-mare.jpg" class="card-img-top" alt="..." />
+              <span class="badge bg-danger position-absolute end-0 mt-2 me-2">HOT</span>
+              <div class="card-body">
+                <h5 class="card-title">Titolo</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, tempore. Sunt numquam vero consectetur
+                  fugit, dolor nisi a sapiente similique cum molestias possimus quam tenetur at perferendis beatae
+                  veritatis repellendus?
+                </p>
+                <a href="#" class="btn btn-info">Prenota!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col card shadow-lg rounded-3">
+              <img src="img/vacanza-mare.jpg" class="card-img-top" alt="..." />
+              <span class="badge bg-danger position-absolute end-0 mt-2 me-2">HOT</span>
+              <div class="col card-body">
+                <h5 class="card-title">Titolo</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, tempore. Sunt numquam vero consectetur
+                  fugit, dolor nisi a sapiente similique cum molestias possimus quam tenetur at perferendis beatae
+                  veritatis repellendus?
+                </p>
+                <a href="#" class="btn btn-info">Prenota!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="img/vacanza-mare.jpg" class="card-img-top" alt="..." />
+              <span class="badge bg-danger position-absolute end-0 mt-2 me-2">HOT</span>
+              <div class="card-body">
+                <h5 class="card-title">Titolo</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, tempore. Sunt numquam vero consectetur
+                  fugit, dolor nisi a sapiente similique cum molestias possimus quam tenetur at perferendis beatae
+                  veritatis repellendus?
+                </p>
+                <a href="#" class="btn btn-info">Prenota!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="img/vacanza-mare.jpg" class="card-img-top" alt="..." />
+              <span class="badge bg-danger position-absolute end-0 mt-2 me-2">HOT</span>
+              <div class="card-body">
+                <h5 class="card-title">Titolo</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, tempore. Sunt numquam vero consectetur
+                  fugit, dolor nisi a sapiente similique cum molestias possimus quam tenetur at perferendis beatae
+                  veritatis repellendus?
+                </p>
+                <a href="#" class="btn btn-info">Prenota!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col d-none d-lg-inline-block">
+            <div class="card shadow-lg">
+              <img src="img/vacanza-mare.jpg" class="card-img-top" alt="..." />
+              <span class="badge bg-danger position-absolute end-0 mt-2 me-2">HOT</span>
+              <div class="card-body">
+                <h5 class="card-title">Titolo</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, tempore. Sunt numquam vero consectetur
+                  fugit, dolor nisi a sapiente similique cum molestias possimus quam tenetur at perferendis beatae
+                  veritatis repellendus?
+                </p>
+                <a href="#" class="btn btn-info">Prenota!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col d-none d-lg-inline-block">
+            <div class="card shadow-lg">
+              <img src="img/vacanza-mare.jpg" class="card-img-top" alt="..." />
+              <span class="badge bg-danger position-absolute end-0 mt-2 me-2">HOT</span>
+              <div class="card-body">
+                <h5 class="card-title">Titolo</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, tempore. Sunt numquam vero consectetur
+                  fugit, dolor nisi a sapiente similique cum molestias possimus quam tenetur at perferendis beatae
+                  veritatis repellendus?
+                </p>
+                <a href="#" class="btn btn-info">Prenota!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="container mt-5">
+          <h3 class="display-7">Offerta del giorno</h3>
+          <div class="container d-flex align-items-center">
+            <div class="col-8 shadow-lg">
+              <img src="img/vacanza-mare.jpg" alt="..." width="100%" class="object-fit-fill border rounded-3" />
+            </div>
+            <div class="col-3 offset-1">
+              <h5 class="card-title">Fushifaru Maldives</h5>
+              <p class="card-text">15.01.2021-31.01.2021</p>
+              <span>Ville a partire da 500€, non fartela sfuggire!</span>
+              <a href="#" class="btn btn-dark text-white">best offer</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container mt-5">
+          <h3>Last Minute</h3>
+          <div class="d-flex">
+            <div class="col-2 border-0 rounded-3 shadow-lg mx-2">
+              <img src="img/vacanza-mare.jpg" alt="" width="100%" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer bg-dark">
-      <div class="align-items-center">
+    <footer class="container-fluid bg-dark text-center mt-5">
+      <div>
         <div>
-          <button class="rounded-3 my-5">Contattaci</button>
+          <button class="btn bg-secondary rounded-3 mt-5">Contattaci</button>
         </div>
-        <span class="text-white">@2021 Kalina Travel LTD. All Rights Reserved.</span>
+        <div class="text-white mt-5">@2021 Kalina Travel LTD. All Rights Reserved.</div>
       </div>
     </footer>
   </body>
